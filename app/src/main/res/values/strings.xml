@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">K9Kooler</string>
+    <!--Values are placeholders for temp readings coming from unit-->
+    <string name="internal_temp">XX</string>
+    <string name="ext_temp">XX</string>
+    <string name="humidity">XX.XX%</string>
+    <string name="deg_C">°C</string>
+    <string name="update_temp_C">%1s °C</string>
+    <string name="update_temp_F">%1s °F</string>
+    <string name="deg_F">°F</string>
+    <string name="preference_file_key" />
+    <string name="saved_tar_temp">0</string> />
+    <string name="sensor_title">Temperature Readings</string>
+    <string name="Sensor1">Inside Car</string>
+    <string name="Sensor2">Gel Battery 1</string>
+    <string name="Sensor3">Gel Battery 2</string>
+    <string name="Sensor4">Cold Air Outlet</string>
+    <string name="Sensor5">Expelled Hot Air</string>
+    <string name="Sensor6">Gel Battery</string>
+
+
+</resources>

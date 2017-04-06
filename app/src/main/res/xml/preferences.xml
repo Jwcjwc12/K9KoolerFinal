@@ -1,4 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Display Information"
+        android:key="display_category">
+
+        <SwitchPreference
+            android:key="display_setting"
+            android:summary="Display Fahrenheit (Default Celsius)"
+            android:title="Temperature Display"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Notification Settings"
+        android:key="notification_settings">
+
+        <SwitchPreference
+            android:key="error_notifications"
+            android:title="Error Notifications"
+            android:summary="Toggle Error Notifications"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Video Stream Settings"
+        android:key="video_settings">
+
+        <SwitchPreference
+            android:key="video_stream"
+            android:title="Video Stream"
+            android:summary="Toggle Video Capture"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 
 </PreferenceScreen>

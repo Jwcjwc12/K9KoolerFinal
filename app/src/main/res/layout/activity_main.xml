@@ -20,8 +20,8 @@
 
         <ImageView
             android:id="@+id/LogoImage"
-            android:layout_width="98dp"
-            android:layout_height="83dp"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/k9kooler_logo" />
 
@@ -33,16 +33,20 @@
             android:text="@string/app_name"
             android:textAlignment="center"
             android:textAllCaps="true"
+            android:textAppearance="@android:style/TextAppearance.Material"
             android:textSize="30sp"
             android:textStyle="normal|bold" />
 
         <ImageButton
 
             android:id="@+id/Settings"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
             android:layout_weight="1"
-            app:srcCompat="@mipmap/ic_launcher" />
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:scaleType="fitCenter"
+            app:srcCompat="@android:drawable/ic_menu_preferences" />
 
     </LinearLayout>
 
@@ -50,7 +54,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -63,28 +68,40 @@
                 android:layout_height="wrap_content"
                 android:text="Target Internal Temperature"
                 android:textAlignment="center"
-                android:textSize="36dp" />
+                android:textAppearance="@android:style/TextAppearance.Material"
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tartempview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="22"
-                android:textAlignment="center"
                 android:gravity="center"
+                android:textAlignment="center"
                 android:textSize="60dp" />
 
             <Button
                 android:id="@+id/tempchangebutton"
                 android:layout_width="match_parent"
-                android:layout_height="500px"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="Change Target Temperature"
                 android:textSize="18sp" />
         </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sensor_title"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -98,11 +115,11 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/sensor_title_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Sensor Value 1"
+                android:text="@string/Sensor1"
                 android:textAlignment="center" />
 
             <TextView
@@ -120,14 +137,15 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            >
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/sensor_title_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Sensor Value 2"
+                android:text="@string/Sensor2"
                 android:textAlignment="center" />
 
             <TextView
@@ -148,11 +166,11 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/sensor_title_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Sensor Value 3"
+                android:text="@string/Sensor3"
                 android:textAlignment="center" />
 
             <TextView
@@ -180,18 +198,16 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/sensor_title_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Sensor Value 4"
+                android:text="@string/Sensor4"
                 android:textAlignment="center" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/sensor_value_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textSize="30sp" />
@@ -205,18 +221,16 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/sensor_title_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Sensor Value 5"
+                android:text="@string/Sensor5"
                 android:textAlignment="center" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/sensor_value_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textSize="30sp" />
@@ -230,18 +244,16 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/sensor_title_6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Sensor Value 6"
+                android:text="@string/Sensor6"
                 android:textAlignment="center" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/sensor_value_6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textSize="30sp" />
@@ -262,13 +274,19 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Refresh" />
+        <Button
+            android:id="@+id/prechill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pre-Chill"/>
 
         <Button
             android:id="@+id/imageButton2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Video Stream" />
+            android:text="Video" />
     </LinearLayout>
 
 </LinearLayout>
